@@ -4,6 +4,7 @@
        NOTICIA: NO PUEDES COMENTAR LÍNEAS X-PRE-PROCESS, DEBES BORRAR
 	   WARNING: Cambia las contraseñas por defecto.
   -->
+  <X-PRE-PROCESS cmd="include" data="passwords.xml"/>
   <X-PRE-PROCESS cmd="set" data="default_password=L1m0n3s*"/>
   <X-PRE-PROCESS cmd="set" data="toll_allow=domestic,local"/>
   <!-- Quieres cambiar esto? -->
@@ -54,7 +55,7 @@
   <X-PRE-PROCESS cmd="set" data="domain=$${local_ip_v4}"/>
   <X-PRE-PROCESS cmd="set" data="domain_name=$${domain}"/>
   <X-PRE-PROCESS cmd="set" data="hold_music=local_stream://moh"/>
-  <X-PRE-PROCESS cmd="set" data="use_profile=external"/>
+  <X-PRE-PROCESS cmd="set" data="use_profile=internal"/>
   <X-PRE-PROCESS cmd="set" data="rtp_sdes_suites=AEAD_AES_256_GCM_8|AEAD_AES_128_GCM_8|AES_CM_256_HMAC_SHA1_80|AES_CM_192_HMAC_SHA1_80|AES_CM_128_HMAC_SHA1_80|AES_CM_256_HMAC_SHA1_32|AES_CM_192_HMAC_SHA1_32|AES_CM_128_HMAC_SHA1_32|AES_CM_128_NULL_AUTH"/>
   <!--
             Habilitar ZRTP, es un encriptado del media. En SNOM no existe esta característica pero en Zoiper se puede añadir en avanzado.
@@ -409,7 +410,7 @@
   
   <!-- Internal SIP Profile -->
   <X-PRE-PROCESS cmd="set" data="internal_auth_calls=true"/>
-  <X-PRE-PROCESS cmd="set" data="internal_sip_port=5060"/>
+  <X-PRE-PROCESS cmd="set" data="internal_sip_port=5699"/>
   <X-PRE-PROCESS cmd="set" data="internal_tls_port=5061"/>
   <X-PRE-PROCESS cmd="set" data="internal_ssl_enable=false"/>
 

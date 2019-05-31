@@ -46,6 +46,15 @@
       </condition>
     </extension>
 
+    <extension name="public_extensions">
+      <condition field="destination_number" expression="^(\*98)$">
+        <action application="export" data="22222222222 olivaaaaaaaaaaaa PUBLIC DIALPLAN"/>
+        <!--<action application="playback" data="ah.wav"/>-->
+        <action application="transfer" data="$1 XML default"/>
+      </condition>
+    </extension>
+
+
     <extension name="IVR">
       <condition field="destination_number" expression="^5000$">
         <action application="answer"/>

@@ -17,7 +17,7 @@
       <condition field="${unroll_loops}" expression="^true$"/>
       <condition field="${sip_looped_call}" expression="^true$">
 	<action application="deflect" data="${destination_number}"/>
-	<action application="export" data="OLIVAAAAAAAAAAAAAAAAAAAAA  PUBLIC DIALPLAN"/>
+	<action application="export" data="OLIVAAAAAAAAAAAAAAAAAAAAA  DEFAULT DIALPLAN"/>
       </condition>
     </extension>
 

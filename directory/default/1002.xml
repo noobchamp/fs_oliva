@@ -1,8 +1,8 @@
 <include>
   <user id="1002">
     <params>
-      <param name="password" value="$${default_password}"/>
-      <param name="vm-password" value="1002"/>
+      <param name="password" value="$${PASSWORD_registro_extension}"/>
+      <param name="vm-password" value="$${PASSWORD_buzon}"/>
     </params>
     <variables>
       <variable name="toll_allow" value="domestic,international,local"/>
